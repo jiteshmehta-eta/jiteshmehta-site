@@ -40,6 +40,16 @@
         <p class="banner__tagline">Owner-Side. Vendor-Neutral. Evidence-Led.</p>
       </div>
     </div>
+    <nav class="nav" aria-label="Main">
+      <div class="wrap">
+        <ul>
+          <li><a href="#insights">Insights</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
   <main id="main">
@@ -59,8 +69,54 @@
       </div>
     </section>
 
-    <!-- 3. RESOURCES -->
-    <section class="section" aria-labelledby="resources-label">
+    <!-- 3. INSIGHTS -->
+    <section class="section" id="insights" aria-labelledby="insights-label">
+      <div class="wrap">
+        <h2 class="label" id="insights-label">Insights</h2>
+
+        <article class="card card--wide">
+          <p class="card__type">Article</p>
+          <h3 class="card__title">Your Supply Chain Expires in 2027</h3>
+          <p class="card__text">For CSCOs in capital intensive energy industries: the five controls to put in place before 2027 begins.</p>
+          <p class="card__detail">Article, October 2026</p>
+          <a class="btn" href="insights/supply-chain-expires-2027.html">Read the article</a>
+        </article>
+
+        <!-- ADD NEW ARTICLE CARDS HERE, directly above this comment. -->
+
+        <!--
+        =====================================================================
+        CARD TEMPLATE: HOW TO ADD A NEW ARTICLE
+        =====================================================================
+        1. Put the article HTML file in the "insights" folder.
+        2. Copy the block between the two dotted lines below.
+        3. Paste it above the line that says "ADD NEW ARTICLE CARDS HERE".
+        4. Change the five lines marked EDIT, then delete the [EDIT ...] notes.
+        5. Add the new article to sitemap.xml, then publish.
+
+        . . . . . . . . . . . . . . copy from here . . . . . . . . . . . . . .
+
+          <article class="card card--wide">
+            <p class="card__type">ARTICLE</p>                                  [EDIT 1: type label]
+            <h3 class="card__title">Title of the article</h3>                  [EDIT 2: title]
+            <p class="card__text">One line description.</p>                    [EDIT 3: description]
+            <p class="card__detail">Article, Month Year</p>                    [EDIT 4: detail line]
+            <a class="btn" href="insights/file-name.html">Read the article</a> [EDIT 5: file name]
+          </article>
+
+        . . . . . . . . . . . . . . copy to here . . . . . . . . . . . . . . .
+
+        Once there are two or more articles, remove "card--wide" from each card
+        and wrap them all in <div class="grid"> ... </div> so they sit side by
+        side on a desktop, exactly like the Resources cards.
+        =====================================================================
+        -->
+
+      </div>
+    </section>
+
+    <!-- 4. RESOURCES -->
+    <section class="section" id="resources" aria-labelledby="resources-label">
       <div class="wrap">
         <h2 class="label" id="resources-label">Resources</h2>
         <p class="intro">Free executive resources from JM ETA. Owner-side, vendor-neutral, evidence-led.</p>
@@ -136,8 +192,8 @@
       </div>
     </section>
 
-    <!-- 4. ABOUT -->
-    <section class="section" aria-labelledby="about-label">
+    <!-- 5. ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-label">
       <div class="wrap">
         <h2 class="label" id="about-label">About</h2>
         <div class="about">
@@ -150,13 +206,13 @@
       </div>
     </section>
 
-    <!-- 5. PRINCIPLE STRIP -->
+    <!-- 6. PRINCIPLE STRIP -->
     <div class="wrap">
       <p class="principle">Prove the need. Prove the standard. Prove the licence. Prove the architecture. Prove the value. Then spend.</p>
     </div>
 
-    <!-- 6. CONTACT -->
-    <section class="section" aria-labelledby="contact-label">
+    <!-- 7. CONTACT -->
+    <section class="section" id="contact" aria-labelledby="contact-label">
       <div class="wrap">
         <h2 class="label" id="contact-label">Contact</h2>
         <dl class="contact">
@@ -190,7 +246,7 @@
 
   </main>
 
-  <!-- 7. FOOTER -->
+  <!-- 8. FOOTER -->
   <footer class="footer">
     <div class="wrap">
       <p>&copy; 2026 JM Enterprise Transformation Advisory. Free to share with attribution.</p>

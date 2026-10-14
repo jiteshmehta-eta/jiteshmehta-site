@@ -88,7 +88,7 @@ a:focus-visible {
   color: var(--white);
 }
 
-.banner .wrap {
+.banner > .wrap {
   display: flex;
   align-items: center;
   gap: 0.875rem;
@@ -116,12 +116,48 @@ a:focus-visible {
   color: var(--gold);
 }
 
+/* ---------- Navigation ---------- */
+
+/* Sits inside the navy banner, above the gold rule. */
+.nav .wrap {
+  padding-bottom: 0.875rem;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.125rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 0.1875rem 0;
+  border-bottom: 2px solid transparent;
+  color: var(--white);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
 /* ---------- Sections ---------- */
 
 .section {
   padding-top: 2.75rem;
   padding-bottom: 2.75rem;
   border-top: 1px solid var(--hairline);
+}
+
+/* Keeps a heading clear of the top edge after a navigation jump. */
+.section[id] {
+  scroll-margin-top: 1rem;
 }
 
 .hero {
@@ -227,6 +263,18 @@ a:focus-visible {
 }
 
 .card--featured .card__text {
+  max-width: 38rem;
+}
+
+/* Full width card used when a section has a single card, such as one
+   article under Insights. Same shape as the featured card but without the
+   gold top rule, so the Guide stays the only gold topped card. */
+.card--wide {
+  margin-top: 1.5rem;
+  padding: 1.5rem 1.25rem;
+}
+
+.card--wide .card__text {
   max-width: 38rem;
 }
 
@@ -416,7 +464,8 @@ a:focus-visible {
     width: auto;
   }
 
-  .card--featured {
+  .card--featured,
+  .card--wide {
     padding: 2rem;
   }
 
