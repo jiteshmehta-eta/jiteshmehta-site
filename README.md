@@ -1,5 +1,5 @@
 # jiteshmehta-site
-Website for JM Enterprise Transformation Advisor
+Website for Jitesh Mehta, Independent Advisor to Boards, CEOs and CSCOs
 
 ## What this is
 
