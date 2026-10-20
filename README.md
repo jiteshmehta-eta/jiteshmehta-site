@@ -3,7 +3,7 @@ Website for JM Enterprise Transformation Advisor
 
 ## What this is
 
-The one page website for JM Enterprise Transformation Advisory (JM ETA), live at https://jiteshmehta.in. It is plain HTML and CSS. There is no build step, no JavaScript, no tracking and no cookies. It is hosted free on GitHub Pages from the root of the `main` branch.
+The website for Jitesh Mehta, Independent Advisor, live at https://jiteshmehta.in. It is plain HTML and CSS. There is no build step, no JavaScript, no tracking and no cookies. It is hosted free on GitHub Pages from the root of the `main` branch.
 
 ## What is in this folder
 
@@ -16,7 +16,7 @@ The one page website for JM Enterprise Transformation Advisory (JM ETA), live at
 | `insights/` | The articles, one HTML file each, plus a preview picture for each. |
 | `logo/` | The JM logo and the portrait used on the page. |
 | `favicon.ico`, `favicon-32.png`, `apple-touch-icon.png` | The small JM icon shown in browser tabs and on phone home screens. |
-| `og-image.png` | The preview picture shown when the link is shared on LinkedIn. |
+| `og-image-v2.png` | The preview picture shown when the link is shared on LinkedIn. |
 | `robots.txt`, `sitemap.xml` | Tell search engines what is on the site. |
 | `CNAME` | Tells GitHub Pages that the site's address is jiteshmehta.in. Do not delete or edit it. |
 
