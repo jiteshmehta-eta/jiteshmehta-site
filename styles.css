@@ -229,6 +229,22 @@ a:focus-visible {
   hyphens: auto;
 }
 
+/* Hyphenation off on the section intros, at Jitesh's request on
+   22 October: he did not want "orchestration" split across lines
+   in the Services opening. This rule must stay after the block
+   above, which has the same specificity, or source order will
+   undo it.
+
+   The cost is wider word gaps, because justification now has no
+   hyphens to help it close the lines up. If those gaps ever become
+   objectionable, the fix is the one used on the SAP panel: set the
+   paragraph ragged instead of justified. You cannot have justified
+   text, no hyphens and no gaps at once; one of the three has to go. */
+.intro {
+  -webkit-hyphens: manual;
+  hyphens: manual;
+}
+
 /* The Services panels are the exception to the rule above. They are
    262px, about 40 characters, which is normally too narrow to
    justify. They carry eight or nine lines of real prose each, so
