@@ -207,6 +207,28 @@ a:focus-visible {
   max-width: 38rem;
 }
 
+/* ---------- Justified body prose ---------- */
+/* Matches the articles: justify always travels with hyphenation,
+   because justifying without it is what opened up the gaps.
+   The page is lang="en-GB", which is what tells the browser where
+   to break words.
+
+   Only wide text is justified. The measure here is about 600px,
+   roughly 90 characters. The small cards in a grid are 262px,
+   roughly 40 characters, and justifying a column that narrow
+   reopens the gaps however good the hyphenation, so .card__text
+   inside .grid is deliberately left alone. Headings, labels,
+   single line details, the hero subtitle and the principle strip
+   stay left as well. */
+.intro,
+.card--featured .card__text,
+.card--wide .card__text,
+.about__text p {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
 .subhead {
   margin-top: 2.25rem;
   color: var(--navy);
@@ -344,6 +366,15 @@ a:focus-visible {
   margin-top: 1rem;
   color: var(--navy);
   font-weight: 700;
+}
+
+/* The closing bold line stays left, like the lead line in an
+   article. The selector is deliberately more specific than
+   ".about__text p" above, or that rule would justify it too. */
+.about__text p.about__note {
+  text-align: left;
+  -webkit-hyphens: manual;
+  hyphens: manual;
 }
 
 /* ---------- Principle strip ---------- */
