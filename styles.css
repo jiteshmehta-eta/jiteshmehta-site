@@ -242,6 +242,18 @@ a:focus-visible {
   hyphens: auto;
 }
 
+/* One panel opts back out. The SAP card is almost entirely proper
+   nouns and acronyms, SAP MM, SAP Ariba, SAP PM/EAM, IBM Maximo,
+   SmartPlant Materials, none of which any hyphenation dictionary
+   will break, so its justified lines could not close up and the
+   gaps stayed. Put class="card card--ragged" on any future card
+   with the same problem. */
+#services .card--ragged .card__text {
+  text-align: left;
+  -webkit-hyphens: manual;
+  hyphens: manual;
+}
+
 .subhead {
   margin-top: 2.25rem;
   color: var(--navy);
