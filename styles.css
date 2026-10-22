@@ -229,6 +229,19 @@ a:focus-visible {
   hyphens: auto;
 }
 
+/* The Services panels are the exception to the rule above. They are
+   262px, about 40 characters, which is normally too narrow to
+   justify. They carry eight or nine lines of real prose each, so
+   they read as paragraphs rather than captions, and Firefox and
+   Safari hyphenate them well enough to hold it together. The short
+   two and three line cards under Resources stay left: too few lines
+   for the browser to spread the space evenly. */
+#services .card__text {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
 .subhead {
   margin-top: 2.25rem;
   color: var(--navy);
