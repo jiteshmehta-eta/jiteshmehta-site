@@ -335,6 +335,13 @@ a:focus-visible {
   scroll-margin-top: 1rem;
 }
 
+/* Any card with an id is a link target, so leave it a little air
+   when the page jumps to it. The Guide is #guide, the cataloguing
+   template is #template. */
+.card[id] {
+  scroll-margin-top: 1rem;
+}
+
 .card--featured .card__title {
   font-size: 1.5rem;
 }
