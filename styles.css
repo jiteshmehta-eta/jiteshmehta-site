@@ -256,14 +256,28 @@ a:focus-visible {
   text-align: justify;
   -webkit-hyphens: auto;
   hyphens: auto;
+
+  /* Give the hyphenation engine many more places to break. In a
+     262px column the browser's default limits leave too few
+     opportunities, which is what opened the gaps on the SAP panel.
+     "5 2 2" means: break only words of five letters or more, and
+     leave at least two letters before the hyphen and two after.
+     Firefox 137 and later and Chrome 109 and later honour this.
+     Safari ignores it and uses the older prefixed pair instead. */
+  hyphenate-limit-chars: 5 2 2;
+  -webkit-hyphenate-limit-before: 2;
+  -webkit-hyphenate-limit-after: 2;
 }
 
-/* One panel opts back out. The SAP card is almost entirely proper
-   nouns and acronyms, SAP MM, SAP Ariba, SAP PM/EAM, IBM Maximo,
-   SmartPlant Materials, none of which any hyphenation dictionary
-   will break, so its justified lines could not close up and the
-   gaps stayed. Put class="card card--ragged" on any future card
-   with the same problem. */
+/* An escape hatch, currently unused. The SAP panel carried this
+   class for a while, because its proper nouns and acronyms, SAP
+   MM, SAP Ariba, SAP PM/EAM, IBM Maximo, SmartPlant Materials,
+   cannot be hyphenated and its justified lines would not close
+   up. Relaxing hyphenate-limit-chars above fixed it well enough
+   to put the panel back. Keep this rule: add class="card
+   card--ragged" to any card whose gaps cannot be closed, and it
+   opts out of justification. Never target cards by nth-child,
+   which breaks the moment the panels are reordered. */
 #services .card--ragged .card__text {
   text-align: left;
   -webkit-hyphens: manual;
