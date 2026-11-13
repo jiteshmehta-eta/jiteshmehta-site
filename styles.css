@@ -220,12 +220,18 @@ a:focus-visible {
    inside .grid is deliberately left alone. The one exception is
    the Insights row, which is set to two columns on wide screens
    and justified there; that rule sits in the 60rem block below.
-   Headings, labels,
+   The Resources cards are the second exception, added at Jitesh's
+   request on 14 November after he looked at both. They are about 39
+   characters, so the gaps the paragraph above warns about are real,
+   but only the template card has more than two lines, and on it the
+   even right edge was judged worth the slightly wider word spacing.
+   Hyphenation is doing most of the work. Headings, labels,
    single line details, the hero subtitle and the principle strip
    stay left as well. */
 .intro,
 .card--featured .card__text,
 .card--wide .card__text,
+#resources .grid .card__text,
 .about__text p {
   text-align: justify;
   -webkit-hyphens: auto;
