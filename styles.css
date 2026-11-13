@@ -217,7 +217,10 @@ a:focus-visible {
    roughly 90 characters. The small cards in a grid are 262px,
    roughly 40 characters, and justifying a column that narrow
    reopens the gaps however good the hyphenation, so .card__text
-   inside .grid is deliberately left alone. Headings, labels,
+   inside .grid is deliberately left alone. The one exception is
+   the Insights row, which is set to two columns on wide screens
+   and justified there; that rule sits in the 60rem block below.
+   Headings, labels,
    single line details, the hero subtitle and the principle strip
    stay left as well. */
 .intro,
@@ -614,6 +617,29 @@ a:focus-visible {
 
   .grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Insights has its own two column row. The shared grid is three
+     columns wide, which squeezed two article cards into about 39
+     characters a line and left the right third of the row empty.
+     Two columns gives about 63 characters, wide enough to justify
+     the card text without reopening the word gaps, and it fills
+     the row. Below this width the cards stack, so they stay
+     ragged, which is why the justify rule lives in here.
+
+     Jitesh's decision, 14 November 2026: the wide cards read
+     better while there are only two articles. When a third is
+     added, delete both rules below and let the shared three
+     column grid take over, which returns the cards to the
+     square shape the Resources cards use. */
+  #insights .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #insights .card__text {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    hyphens: auto;
   }
 
   .principle {
