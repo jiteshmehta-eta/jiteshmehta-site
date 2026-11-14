@@ -5,7 +5,7 @@
    by one. Replacing a PDF under its existing name needs no change here,
    because every file is refreshed from the network whenever one is available. */
 
-const VERSION = 'v1';
+const VERSION = 'v2';
 const CACHE = 'jm-' + VERSION;
 
 /* Saved on first visit, so the site opens with no connection. */

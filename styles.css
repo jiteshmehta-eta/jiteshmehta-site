@@ -126,7 +126,8 @@ a:focus-visible {
 .nav ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.125rem 1.25rem;
+  /* The column gap narrows on a phone so six items stay on one line. */
+  gap: 0.125rem clamp(0.4375rem, 2.2vw, 1.25rem);
   margin: 0;
   padding: 0;
   list-style: none;
