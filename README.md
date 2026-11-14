@@ -14,6 +14,7 @@ The website for Jitesh Mehta, Independent Advisor, live at https://jiteshmehta.i
 | `404.html` | The page shown when someone follows a broken link. |
 | `downloads/` | The PDFs visitors can download. |
 | `insights/` | The articles, one HTML file each, plus a preview picture for each. |
+| `templates/` | Pages for each free template, plus a preview picture for each. |
 | `logo/` | The JM logo and the portrait used on the page. |
 | `favicon.ico`, `favicon-32.png`, `apple-touch-icon.png` | The small JM icon shown in browser tabs and on phone home screens. |
 | `og-image-v2.png` | The preview picture shown when the link is shared on LinkedIn. |

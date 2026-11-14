@@ -5,7 +5,7 @@
    by one. Replacing a PDF under its existing name needs no change here,
    because every file is refreshed from the network whenever one is available. */
 
-const VERSION = 'v2';
+const VERSION = 'v3';
 const CACHE = 'jm-' + VERSION;
 
 /* Saved on first visit, so the site opens with no connection. */
@@ -22,7 +22,8 @@ const PAGES = [
   '/logo/icon-512.png',
   '/logo/jitesh-mehta-480.jpg',
   '/insights/erp-replaced-sooner.html',
-  '/insights/supply-chain-expires-2027.html'
+  '/insights/supply-chain-expires-2027.html',
+  '/templates/piping-materials-cataloguing-template.html'
 ];
 
 /* Saved only inside the installed app, so an ordinary website visitor on
