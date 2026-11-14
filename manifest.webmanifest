@@ -1,0 +1,24 @@
+{
+  "name": "Jitesh Mehta, Independent Advisor",
+  "short_name": "Jitesh Mehta",
+  "description": "Independent, owner-side advice for boards, CEOs and CSCOs on supply chain, SAP and enterprise asset investments.",
+  "lang": "en-GB",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#1B3A6B",
+  "background_color": "#01102F",
+  "categories": ["business", "education"],
+  "icons": [
+    { "src": "/logo/logo-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/logo/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/logo/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Insights", "url": "/#insights" },
+    { "name": "Resources", "url": "/#resources" },
+    { "name": "Contact", "url": "/#contact" }
+  ]
+}
