@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.jiteshmehta.app",
+    "sha256_cert_fingerprints": ["81:9C:A4:CA:C8:3B:F5:EF:36:1D:F7:55:AF:EA:51:A2:0E:42:1E:6C:9B:3C:66:0B:8C:F4:9D:C7:45:3F:B1:D7"]
+  }
+}]
