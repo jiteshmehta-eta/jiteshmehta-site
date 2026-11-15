@@ -133,6 +133,18 @@ a:focus-visible {
   list-style: none;
 }
 
+/* Seven items cannot share one row on a phone at a readable size. Below
+   40rem they form a tidy grid instead, four over three with the columns
+   lined up, rather than wrapping raggedly with two items left over. */
+@media (max-width: 39.99rem) {
+  .nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: start;
+    column-gap: clamp(0.75rem, 4vw, 1.25rem);
+  }
+}
+
 .nav a {
   display: inline-block;
   padding: 0.1875rem 0;
@@ -233,6 +245,7 @@ a:focus-visible {
 .card--featured .card__text,
 .card--wide .card__text,
 #resources .grid .card__text,
+#tools .grid .card__text,
 .about__text p {
   text-align: justify;
   -webkit-hyphens: auto;
@@ -354,6 +367,16 @@ a:focus-visible {
   margin-bottom: 1.125rem;
   color: var(--grey);
   font-size: 0.9375rem;
+}
+
+/* A detail line that is the last thing in a card, as on the Services
+   packages which have no button, drops to the bottom of the card. The
+   lines then align across a row, and the card's bottom padding matches
+   every other card instead of gaining the gap meant for a button. */
+.card__detail:last-child {
+  margin-top: auto;
+  padding-top: 0.625rem;
+  margin-bottom: 0;
 }
 
 .card--featured {
@@ -657,9 +680,16 @@ a:focus-visible {
      added, delete both rules below and let the shared three
      column grid take over, which returns the cards to the
      square shape the Resources cards use. */
-  #insights .grid {
+  #insights .grid,
+  #tools .grid,
+  #resources .grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Free Tools holds two cards and Resources, after the template and the
+     software moved up on 15 November 2026, holds four. In the shared
+     three column grid that left one empty slot beside the tools and the
+     App card alone on a second row. Two columns fills both rows. */
 
   #insights .card__text {
     text-align: justify;
