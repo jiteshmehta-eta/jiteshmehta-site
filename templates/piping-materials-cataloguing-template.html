@@ -22,7 +22,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.webmanifest">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DigitalDocument", "name": "Piping Materials Cataloguing Template", "description": "Free Excel template for oil and gas, refining and EPC: stops duplicate and incomplete piping material codes at the request, with a five level duplicate check against your material master. No macros.", "url": "https://jiteshmehta.in/templates/piping-materials-cataloguing-template.html", "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "version": "2.2", "dateModified": "2026-11", "isAccessibleForFree": true, "inLanguage": "en-GB", "author": {"@type": "Person", "name": "Jitesh Mehta", "url": "https://jiteshmehta.in/"}, "license": "Free to use and adapt within your own organisation. Not for resale.", "keywords": "piping material cataloguing, material master, duplicate material codes, noun modifier, ISO 8000, ISO 22745, UNSPSC, master data governance"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DigitalDocument", "name": "Piping Materials Cataloguing Template", "description": "Free Excel template for oil and gas, refining and EPC: stops duplicate and incomplete piping material codes at the request, with a five level duplicate check against your material master. No macros.", "url": "https://jiteshmehta.in/templates/piping-materials-cataloguing-template.html", "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "version": "2.3", "dateModified": "2026-11", "isAccessibleForFree": true, "inLanguage": "en-GB", "author": {"@type": "Person", "name": "Jitesh Mehta", "url": "https://jiteshmehta.in/"}, "license": "Free to use and adapt within your own organisation. Not for resale.", "keywords": "piping material cataloguing, material master, duplicate material codes, noun modifier, ISO 8000, ISO 22745, UNSPSC, master data governance"}</script>
 <style>
 :root{--navy:#1B3A6B;--gold:#C9A84C;--bg:#F2F4F7;--txt:#1A1A1A;--grey:#666}
 *{box-sizing:border-box}body{margin:0;font-family:Calibri,Carlito,"Segoe UI",Arial,sans-serif;color:var(--txt);background:#fff;font-size:18px;line-height:1.65}
@@ -65,13 +65,14 @@ footer div{max-width:760px;margin:0 auto;padding:22px 16px}
 .dl{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;background:var(--bg);border-left:6px solid var(--gold);padding:18px 22px;margin:24px 0}
 .dlbtn{display:inline-block;background:var(--gold);color:var(--navy)!important;font-weight:700;text-decoration:none;padding:12px 22px;font-size:18px}.dlbtn:hover{background:var(--navy);color:#fff!important}.dlbtn:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
 .dl span{color:var(--grey);font-size:15px}
+.dlbtn--navy{background:var(--navy);color:#fff!important}.dlbtn--navy:hover{background:var(--gold);color:var(--navy)!important}
 </style></head><body>
 <header><div class="hd"><img class="mono" src="/logo/logo-192.png" width="192" height="192" alt="JM logo"><div><a href="/">Jitesh Mehta</a><span>Independent Advisor to Boards, CEOs and CSCOs</span></div></div><nav class="nav" aria-label="Main"><div><ul><li><a href="/#tools">Free Tools</a></li><li><a href="/#insights">Insights</a></li><li><a href="/#resources">Resources</a></li><li><a href="/#services">Services</a></li><li><a href="/#about">About</a></li><li><a href="/#contact">Contact</a></li><li><a href="/#app">App</a></li></ul></div></nav></header>
 <main><a class="back" href="/#template">&larr; Back to jiteshmehta.in</a>
 <h1>The Piping Materials Cataloguing Template</h1>
 <p class="sub">A free Excel template that stops duplicate and incomplete material codes at the request, before they ever reach your material master.</p>
-<p class="by">By Jitesh Mehta, Independent Advisor · Version 2.2, November 2026</p>
-<div class="dl"><a class="dlbtn" href="/downloads/JM_ETA_Piping_Materials_Cataloguing_Template.xlsx" download type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">Download the template</a><span>Excel workbook, 21 sheets, about 6 MB. Free. No sign up. No macros.</span></div>
+<p class="by">By Jitesh Mehta, Independent Advisor · Version 2.3, November 2026</p>
+<div class="dl"><a class="dlbtn" href="/downloads/JM_ETA_Piping_Materials_Cataloguing_Template.xlsx" download type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">Download the template</a><span>Excel workbook, 26 sheets, about 12 MB. Free. No sign up. No macros.</span></div>
 
 <h2>Why this template exists</h2>
 <p>Most bad material master data starts at the request. A request that leaves out the schedule, the class or the material grade gets coded anyway. An item that already exists gets a second code because nobody searched first. Duplicate codes split your stock, hide what you already own and inflate your inventory.</p>
@@ -97,7 +98,7 @@ footer div{max-width:760px;margin:0 auto;padding:22px 16px}
 
 <h2>What is inside</h2>
 <p><strong>Nine commodity sheets:</strong> Pipe, Non Metallic Pipe, Fittings, Flanges, Gaskets, Bolting, Valves, Tubing (tubing and tube fittings) and Specialties. Each has a worked example in row 6, drop down lists for standard values, and fields marked Mandatory, If applicable, Optional or Auto.</p>
-<p><strong>Twelve supporting sheets:</strong> Read Me, UIC Search, Request Header, Approvals, Material Master, Health Check, Noun Modifier, Equivalents, Abbreviations, UNSPSC Map, Lists and References.</p>
+<p><strong>Seventeen supporting sheets:</strong> Read Me, UIC Search, Request Header, Approvals, Material Master, Health Check, Attribute Gaps, AI Lookup, AI Findings, Noun Modifier, Equivalents, Abbreviations, UNSPSC Map, Attribute Rules, Attribute Engine, Lists and References.</p>
 <ul>
 <li><strong>Smart grade lists.</strong> On the Pipe sheet, pick the material specification first and the Grade list shows only the grades for that specification.</li>
 <li><strong>Sour service built in.</strong> NACE MR0175/ISO 15156 for production, NACE MR0103/ISO 17945 for refining, and HIC (TM0284) and SSC (TM0177) testing options.</li>
@@ -121,6 +122,13 @@ footer div{max-width:760px;margin:0 auto;padding:22px 16px}
 <p>Load your existing master and the Health Check sheet counts the likely duplicates already inside it: one UIC used for two items, the same part number on two codes, a part number listed as superseded on another item, identical descriptions, and the same words in a different order. Each group gets a parent row and child rows, so your team can review and merge codes one group at a time.</p>
 <p>New requests and legacy cleansing are separate jobs. The template controls new items at the door; the health check shows you the size of the clean up behind it.</p>
 
+<h2>Missing attributes: found by AI, confirmed by a person</h2>
+<p>A spare cannot be bought correctly from a description that leaves out the size, the pressure class or the seat material. The Attribute Gaps sheet lists every item in your material master whose description is incomplete, names the attributes it is missing for its item type and gives a completeness figure. The attributes required for each item type are on the Attribute Rules sheet, where you can change them.</p>
+<p>Where an item has a manufacturer part number, an AI assistant can look up the missing attributes on the manufacturer's website. The AI Lookup sheet holds the instructions and a ready made prompt for Claude, ChatGPT, Gemini or Copilot with web search switched on. No key and no macros are needed. What the AI finds goes onto the AI Findings sheet with the web address it came from.</p>
+<p class="lead">The AI proposes, a person confirms. Every value stays UNVERIFIED until someone opens the source and confirms it, and only confirmed values count. A value the AI cannot find stays on the missing list. Nothing is guessed.</p>
+<p><strong>For organisations with an Anthropic API key,</strong> the free JM Attribute Lookup tool runs the lookup for you. It reads the Attribute Gaps sheet, looks up to ten items in a run and writes its findings onto AI Findings, each one UNVERIFIED and with its source. It rejects any value whose source page it did not search or open. It runs on Windows with Excel, installs nothing and stores no key.</p>
+<div class="dl"><a class="dlbtn dlbtn--navy" href="/downloads/JM_Attribute_Lookup.zip" download type="application/zip">Download the lookup tool</a><span>Windows, needs Excel and your own Anthropic API key. Version 1.0. Read the READ ME FIRST file inside, and test it on your own test data first. In case of any difficulty, <a href="mailto:jitesh@jiteshmehta.in">contact Jitesh</a>.</span></div>
+
 <h2>Line status: one word tells you where you stand</h2>
 <ul>
 <li><strong>USE EXISTING UIC:</strong> the item already exists. No new request is needed.</li>
@@ -143,7 +151,7 @@ footer div{max-width:760px;margin:0 auto;padding:22px 16px}
 <p><strong>Does it replace engineering review?</strong> No. Your Piping Material Specification and project specifications govern. The template catches common errors before they become codes. Always check grades, editions and size limits against your own licensed copies of the standards.</p>
 <p><strong>Are other disciplines coming?</strong> Yes. Templates for other disciplines are planned. If you need one for your organisation now, <a href="mailto:jitesh@jiteshmehta.in">write to me</a>.</p>
 
-<div class="dl"><a class="dlbtn" href="/downloads/JM_ETA_Piping_Materials_Cataloguing_Template.xlsx" download type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">Download the template</a><span>Version 2.2, November 2026. Read the Read Me sheet first.</span></div>
+<div class="dl"><a class="dlbtn" href="/downloads/JM_ETA_Piping_Materials_Cataloguing_Template.xlsx" download type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">Download the template</a><span>Version 2.3, November 2026. Read the Read Me sheet first.</span></div>
 
 <blockquote>Clean master data is not a clean up project. It is a door you control. This template is the door.</blockquote>
 <p class="bio">© 2026 Jitesh Mehta. Developed by Jitesh Mehta. Free to use and adapt within your own organisation. You may not sell, resell or include this template, or any adapted version of it, in a paid product or service without written permission. The words "Developed by Jitesh Mehta" and this notice must remain in all copies and all adapted versions. Provided as is, for guidance only; see the Disclaimer on the Read Me sheet. <a href="/">jiteshmehta.in</a> &middot; <a href="mailto:jitesh@jiteshmehta.in">jitesh@jiteshmehta.in</a></p>
